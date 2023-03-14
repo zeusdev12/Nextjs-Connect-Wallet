@@ -79,7 +79,13 @@ export const useWeb3 = () => {
     if (web3Modal && web3Modal.cachedProvider) {
       connect()
     }
-  }, [connect])
+  }, [])
+
+  useEffect(() => {
+    if (address) {
+      toast.success(`Connected to Web3, Address: ${address}`)
+    }
+  }, [address]);
 
   // EIP-1193 events
   useEffect(() => {
