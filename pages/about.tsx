@@ -23,7 +23,7 @@ const About: NextPage = () => {
       </main>
 
       <footer>
-        <p>Footer</p>
+        <h1>Footer</h1>
       </footer>
     </div>
   )
